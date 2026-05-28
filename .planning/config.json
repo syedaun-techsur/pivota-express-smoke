@@ -1,0 +1,16 @@
+{
+  "mode": "yolo",
+  "granularity": "quick",
+  "auto_advance": false,
+  "nyquist_validation": true,
+  "parallelization": true,
+  "commit_docs": true,
+  "model_profile": "budget",
+  "workflow_mode": "spec-express",
+  "workflow": {
+    "research": false,
+    "plan_check": false,
+    "verifier": false,
+    "project_specs": true
+  }
+}
