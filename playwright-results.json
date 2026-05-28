@@ -1,0 +1,515 @@
+{
+  "config": {
+    "configFile": "/home/daytona/project/playwright.config.ts",
+    "rootDir": "/home/daytona/project/e2e/uat",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/daytona/project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/daytona/project/e2e/uat",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "build-a-single-page-personal-landing-web.spec.ts",
+      "file": "build-a-single-page-personal-landing-web.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "F0: Landing page shows Ada Lovelace name and bio",
+          "file": "build-a-single-page-personal-landing-web.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Opening index.html shows the name 'Ada Lovelace' on screen",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 929,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:12.498Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-503db7a37b4e9781bff7",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "Opening index.html shows the bio text 'Mathematician & first programmer.'",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 288,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:13.673Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-54e9e640a9bb4ff0257b",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "Page validates as HTML5 — correct nesting, no stray tags",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:13.995Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-9e2a1a16bf03bdfa2b10",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "No inline styles, no external CDN links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 203,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:14.305Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-b1555a911d99cc56efbb",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 36,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "F1: Theme toggle button is present and functional",
+          "file": "build-a-single-page-personal-landing-web.spec.ts",
+          "line": 60,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A 'Toggle theme' button with id='theme-toggle' is visible on the page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 842,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:14.526Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-8c2da3d7ef1474488264",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "Clicking 'Toggle theme' switches the page between light and dark mode",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 292,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:15.388Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-40b96ab1731cc4c3df0d",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "Clicking 'Toggle theme' again switches back to the original mode",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 368,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:15.696Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-d1a90d72487c4a467de6",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 80,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "F2: Theme choice persists across page reloads via localStorage",
+          "file": "build-a-single-page-personal-landing-web.spec.ts",
+          "line": 94,
+          "column": 6,
+          "specs": [
+            {
+              "title": "After clicking Toggle theme to dark mode, reloading the page keeps dark mode active",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 224,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:16.083Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-e5fbeedcf191fd58baf0",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "After clicking Toggle theme to light mode, reloading the page keeps light mode active",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 344,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:16.322Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-79fd492a65c5c80c9fa1",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 111,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "F3: CSS themes: light default, body.dark for dark mode",
+          "file": "build-a-single-page-personal-landing-web.spec.ts",
+          "line": 132,
+          "column": 6,
+          "specs": [
+            {
+              "title": "On initial load (no localStorage), the body does NOT have class 'dark' (light mode is default)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 162,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:16.682Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-23cd3b86c9356c61125f",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 133,
+              "column": 7
+            },
+            {
+              "title": "After clicking toggle, the body element has class 'dark'",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 272,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:16.860Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-2232758e2562dd98d584",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "No external fonts, no @import, no CDN links in stylesheet",
+              "ok": true,
+              "tags": [
+                "import,"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 160,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-28T20:20:17.148Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "40cdf4a99b10fd89f926-d25744f16349fd7569f3",
+              "file": "build-a-single-page-personal-landing-web.spec.ts",
+              "line": 148,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-28T20:20:11.560Z",
+    "duration": 5842.539000000001,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
