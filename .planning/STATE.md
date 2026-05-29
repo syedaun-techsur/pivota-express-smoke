@@ -3,7 +3,7 @@
 **Workflow Mode:** spec-express
 **Current Milestone:** v1
 **Status:** initialized
-**Last activity:** 2026-05-29 - UAT verified express task build-a-single-page-personal-landing-web (12/12 passed, 1 fix cycle)
+**Last activity:** 2026-05-29 - UAT verified express task add-centered-hello-pivota-heading-bright (7/7 passed)
 
 ---
 
@@ -20,7 +20,6 @@ All spec documents live in `project_specs/`. Use `/pivota_spec-quick` for new wo
 
 | # | Description | Date | Commit | UAT | Directory |
 |---|-------------|------|--------|-----|-----------|
-| build-a-single-page-personal-landing-web | Build a single-page personal landing page for Ada Lovelace with light/dark theme toggle and localStorage persistence | 2026-05-28 | 0f69201 | ✓ 12/12 | [build-a-single-page-personal-landing-web](./express/build-a-single-page-personal-landing-web/) |
 | add-centered-hello-pivota-heading-bright | Add a centered Hello Pivota heading in bright blue near the top of the landing page | 2026-05-29 | 8edbf20 | ✓ 7/7 | [add-centered-hello-pivota-heading-bright](./express/add-centered-hello-pivota-heading-bright/) |
 
 ## Blockers/Concerns
