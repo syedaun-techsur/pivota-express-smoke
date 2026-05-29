@@ -34,6 +34,20 @@ button:hover {
   opacity: 0.75;
 }
 
+/* Welcome banner */
+#welcome-banner {
+  background-color: #008080;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* Hello Pivota heading */
 #hello-pivota {
   text-align: center;
