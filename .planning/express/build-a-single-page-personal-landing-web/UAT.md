@@ -1,6 +1,6 @@
 ---
 slug: build-a-single-page-personal-landing-web
-verified: 2026-05-28T20:19:23Z
+verified: 2026-05-29T20:09:00Z
 build: passed
 app_url: http://localhost:8000
 test_attempts: 1
@@ -11,7 +11,7 @@ playwright_skip: 0
 
 # UAT — Express Task: build-a-single-page-personal-landing-web
 
-**Verified:** 2026-05-28
+**Verified:** 2026-05-29
 **Build:** ✓ Passed (static site — no build step required)
 **Application:** http://localhost:8000
 
@@ -24,16 +24,16 @@ playwright_skip: 0
 | — Skip | 0 |
 | **Total** | **12** |
 
-**Fix cycles used:** 1/10
+**Fix cycles used:** 1/10 (passed on first run — no fixes needed)
 
-## User Story Coverage
+## Feature Coverage
 
-| Story | Title | Status |
-|-------|-------|--------|
-| F0 | Landing page shows Ada Lovelace name and bio | ✓ Pass |
-| F1 | Theme toggle button is present and functional | ✓ Pass |
-| F2 | Theme choice persists across page reloads via localStorage | ✓ Pass |
-| F3 | CSS themes: light default, body.dark for dark mode | ✓ Pass |
+| Feature | Title | Status |
+|---------|-------|--------|
+| F0 | Landing page shows Ada Lovelace name and bio | ✓ Pass (4/4 tests) |
+| F1 | Theme toggle button is present and functional | ✓ Pass (3/3 tests) |
+| F2 | Theme choice persists across page reloads via localStorage | ✓ Pass (2/2 tests) |
+| F3 | CSS themes: light default, body.dark for dark mode | ✓ Pass (3/3 tests) |
 
 ## Failing Tests
 
@@ -46,9 +46,9 @@ Results: `playwright-results.json`
 
 ## Build Log
 
-Build system: unknown (static HTML/CSS/JS — no build step required)
-Build attempts: 1/10
-Build status: ✓ Passed (skipped — no build system detected)
+Build system: static (npm is test-harness only)
+Build attempts: 0/10 (skipped — no build step for static site)
+Build status: ✓ Passed
 
 ## Next Steps
 
