@@ -7,7 +7,7 @@ total_plans: 1
 total_waves: 1
 ---
 
-# Express Task: Build a Single-Page Personal Landing Page — Summary
+# Express Task: Build a single-page personal landing page for Ada Lovelace — Summary
 
 ## Execution Overview
 
@@ -19,21 +19,21 @@ total_waves: 1
 
 | Wave | Plans | Status |
 |------|-------|--------|
-| 1 | 01 (Frontend — Static Landing Page) | ✓ Complete |
+| 1 | 01 | ✓ Complete |
 
 ### Per-Plan Details
 
-**01:** Vanilla HTML/CSS/JS Ada Lovelace landing page with localStorage-persisted light/dark theme toggle via `body.dark` class switching.
+**01 — Static Landing Page:** Vanilla HTML/CSS/JS Ada Lovelace landing page with localStorage-persisted light/dark theme toggle via `body.dark` class switching.
 - Tasks: 3/3
-- Commits: `cfbbae3`, `428dd54`, `ff0a55e`, `0f69201`
+- Commits: `cfbbae3`, `428dd54`, `ff0a55e`
 - Files created: `index.html`, `styles.css`, `script.js`
 
 ### Aggregated Stats
 
 - **Total tasks:** 3
-- **Total commits:** 4
+- **Total commits:** 3
 - **Key files created:** `index.html`, `styles.css`, `script.js`
 
 ### Deviations
 
-None.
+None — plan executed exactly as written.
