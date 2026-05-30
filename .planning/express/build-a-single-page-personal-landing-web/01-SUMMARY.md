@@ -6,16 +6,13 @@ tags: [html, css, javascript, landing-page, theme-toggle, localStorage]
 dependency_graph:
   requires: []
   provides:
-    - index.html (HTML5 page with Ada Lovelace content and theme-toggle button)
-    - styles.css (light/dark theme CSS, self-contained)
-    - script.js (IIFE with localStorage-persisted theme toggle)
+    - index.html (HTML5 landing page with Ada Lovelace content)
+    - styles.css (light/dark CSS theme via body.dark class)
+    - script.js (theme toggle with localStorage persistence)
   affects: []
 tech_stack:
   added: []
-  patterns:
-    - Vanilla JS IIFE for scoped DOM manipulation
-    - CSS class-based theming (body.dark)
-    - localStorage for client-side state persistence
+  patterns: [vanilla-JS-IIFE, CSS-class-theming, localStorage-persistence]
 key_files:
   created:
     - index.html
@@ -23,52 +20,54 @@ key_files:
     - script.js
   modified: []
 decisions:
-  - Used IIFE pattern for script.js to avoid polluting global scope
-  - body.dark class on body element for theme switching (no JS-injected style tags)
-  - main element wraps visible content for semantic HTML structure
+  - "Vanilla JS IIFE pattern used — no framework, no modules, works with plain HTTP server"
+  - "CSS class-based theming (body.dark) keeps style logic in CSS, not JS"
+  - "localStorage key 'theme' stores 'dark' or 'light' for persistence across reloads"
 metrics:
-  duration: "41 seconds"
-  completed: "2026-05-28T20:10:49Z"
+  duration: "~5 minutes"
+  completed: "2026-05-30"
   tasks_completed: 3
-  files_created: 3
+  files_modified: 3
 ---
 
 # Express Plan 01: Static Landing Page Summary
 
-**One-liner:** Vanilla HTML/CSS/JS Ada Lovelace landing page with localStorage-persisted light/dark theme toggle via `body.dark` class switching.
+**One-liner:** Vanilla HTML/CSS/JS personal landing page for Ada Lovelace with localStorage-persisted light/dark theme toggle.
 
 ---
 
 ## Tasks Completed
 
-| # | Task | Commit | Key Files |
-|---|------|--------|-----------|
-| 1 | Create `index.html` | `cfbbae3` | `index.html` |
-| 2 | Create `styles.css` | `428dd54` | `styles.css` |
-| 3 | Create `script.js` | `ff0a55e` | `script.js` |
+| Task | Name              | Commit  | Files        |
+|------|-------------------|---------|--------------|
+| 1    | Create index.html | 831469f | index.html   |
+| 2    | Create styles.css | 1fdc7f2 | styles.css   |
+| 3    | Create script.js  | 0107a12 | script.js    |
+
+> Note: Task 3 (script.js) was already correctly implemented in the reset commit (0107a12) and required no changes — the file matched the spec exactly.
 
 ---
 
 ## What Was Built
 
-A complete single-page personal landing page for Ada Lovelace with:
+A complete static single-page landing page:
 
-- **`index.html`** — HTML5 skeleton with semantic `<main>` wrapper, `<h1>Ada Lovelace</h1>`, bio paragraph, and `<button id="theme-toggle">Toggle theme</button>`. Links `styles.css` in head and `script.js` at bottom of body.
-
-- **`styles.css`** — Minimal self-contained stylesheet. Light theme is default (white background, dark text, centered flex layout, `min-height: 100vh`). Dark theme activates via `body.dark` class (dark background, light text). Button inherits theme colors via `currentColor`. No external fonts, no `@import`, no CDN.
-
-- **`script.js`** — IIFE that: (1) reads `localStorage.getItem('theme')` on load and adds `body.dark` if value is `'dark'`; (2) listens for click on `#theme-toggle`, toggles `body.dark`, and writes `'dark'` or `'light'` to `localStorage`. No frameworks, no modules, works with `python3 -m http.server`.
+- **`index.html`** — HTML5 page with `<h1>Ada Lovelace</h1>`, bio paragraph, and `<button id="theme-toggle">Toggle theme</button>` wired to `styles.css` and `script.js`
+- **`styles.css`** — Clean minimal CSS with light default (white bg, dark text) and dark theme via `body.dark` class (dark bg, light text); button inherits theme colors; centered flexbox layout; no external imports
+- **`script.js`** — IIFE that reads `localStorage.getItem('theme')` on load to restore persisted theme, and toggles `body.dark` + writes to localStorage on button click
 
 ---
 
 ## Verification Results
 
 ```
-FILES_OK  — index.html, styles.css, script.js all exist at repo root
-HTML_OK   — Contains 'Ada Lovelace', 'Mathematician', 'theme-toggle'
-CSS_OK    — Contains 'body.dark' and 'background-color' rules
-JS_OK     — Contains 'localStorage' and 'classList.toggle'
+FILES_OK   — index.html, styles.css, script.js all exist at repository root
+HTML_OK    — HTML contains 'Ada Lovelace', 'Mathematician', and 'theme-toggle'
+CSS_OK     — CSS contains 'body.dark' dark theme rule
+JS_OK      — JS contains 'localStorage' and 'classList.toggle'
 ```
+
+All plan verification criteria: ✅ PASSED
 
 ---
 
@@ -78,13 +77,10 @@ None — plan executed exactly as written.
 
 ---
 
-## Self-Check
-
-- [x] `index.html` exists at repo root — FOUND
-- [x] `styles.css` exists at repo root — FOUND
-- [x] `script.js` exists at repo root — FOUND
-- [x] Commit `cfbbae3` (Task 1) — FOUND
-- [x] Commit `428dd54` (Task 2) — FOUND
-- [x] Commit `ff0a55e` (Task 3) — FOUND
-
 ## Self-Check: PASSED
+
+- `index.html` exists: ✅
+- `styles.css` exists: ✅
+- `script.js` exists: ✅
+- Commits 831469f, 1fdc7f2, 0107a12 exist: ✅
+- All verification criteria pass: ✅
