@@ -21,7 +21,7 @@ All spec documents live in `project_specs/`. Use `/pivota_spec-quick` for new wo
 | # | Description | Date | Commit | UAT | Directory |
 |---|-------------|------|--------|-----|-----------|
 | add-centered-hello-pivota-heading-bright | Add a centered Hello Pivota heading in bright blue near the top of the landing page | 2026-05-29 | 8edbf20 | ✓ 7/7 | [add-centered-hello-pivota-heading-bright](./express/add-centered-hello-pivota-heading-bright/) |
-| build-a-single-page-personal-landing-web | Build a single-page personal landing web | 2026-05-30 | b439b57 | [build-a-single-page-personal-landing-web](./express/build-a-single-page-personal-landing-web/) |
+| build-a-single-page-personal-landing-web | Build a single-page personal landing web | 2026-05-30 | b439b57 | ✓ 10/10 | [build-a-single-page-personal-landing-web](./express/build-a-single-page-personal-landing-web/) |
 
 ## Blockers/Concerns
 
